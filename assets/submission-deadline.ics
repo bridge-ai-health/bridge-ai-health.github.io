@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bridge AI Health//AAAI-27 Bridge//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:submission-2026@bridge-ai-health.github.io
+DTSTAMP:20261029T120000Z
+DTSTART:20261202T115900Z
+DURATION:PT1M
+SUMMARY:AAAI-27 Bridge AI + Health submission deadline
+DESCRIPTION:Two-page contributions due December 1\, 2026 at 11:59 PM AoE
+  (UTC-12). This is December 2 at 11:59 UTC. Submission link coming soon.
+URL:https://bridge-ai-health.github.io/#call-for-papers
+END:VEVENT
+END:VCALENDAR

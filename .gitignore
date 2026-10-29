@@ -1,0 +1,7 @@
+# Keep the original proposal, local previews, and verification output local.
+*.pdf
+tmp/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
