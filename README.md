@@ -9,13 +9,18 @@ Intended GitHub Pages address: https://bridge-ai-health.github.io/
 - `index.html`: all public content, dates, chairs, organizers, and links.
 - `styles.css`: responsive styling, mobile layout, focus states, reduced motion, and print styles.
 - `script.js`: mobile navigation. The content and FAQ work without JavaScript.
-- `assets/reasoning-graph.svg`: original vector illustration.
+- `assets/montreal-skyline.jpg`: Montréal banner photograph (public domain; source below).
+- `assets/reasoning-graph.svg`: original vector illustration retained as an optional asset.
 - `assets/favicon.svg`: original site icon.
 - `assets/submission-deadline.ics`: optional calendar download for the deadline.
 - `Image/`: the eight chair and organizer portraits supplied by the user. Keep the exact filename capitalization for GitHub Pages.
 - `.nojekyll`: serves this as a plain static GitHub Pages website.
 
-No package installation, framework, build process, external fonts, analytics, or API keys are needed.
+No package installation, framework, build process, analytics, or API keys are needed. Montserrat and Source Sans Pro load from Google Fonts, matching the LLM4HR reference; system fonts are used if the service is unavailable.
+
+## Visual style
+
+The layout follows [LLM4HR](https://llm4hr.github.io/): a compact purple skyline banner, white navigation bar, blue underlined headings, white and light-gray sections, striped date/program tables, rounded portraits, and a blue footer. The banner uses a Montréal photograph to match this bridge's location. The bridge's own topics, submission requirements, dates, people, and profile links are preserved.
 
 ## Preview
 
@@ -53,7 +58,7 @@ Only the website files are selected by the commands above. The original proposal
 - “Submission link coming soon” is intentional. Replace the `.submission-notice` in `index.html` with a real link when ready; update the nearby submission instructions and FAQ together. Do not use AAAI's bridge-proposal submission portal as the attendee paper submission link.
 - Bridge Chairs: Zhong Chen, Chen Zhao, Hao Gao, Steve Jiang. Local portraits and linked names are included; Zhong Chen and Chen Zhao use their personal homepages, while Hao Gao and Steve Jiang use their UT Southwestern faculty profiles.
 - Bridge Organizers: Jiaxin Li, Dong Li, Zihan Li, Yang Yan. Local portraits, linked names, and affiliations are included. Profiles and affiliations follow the user-supplied LLM4HR reference: Jiaxin Li and Yang Yan link to Google Scholar, Dong Li to his personal homepage, and Zihan Li to GitHub.
-- Portraits are displayed in consistent square frames with CSS positioning; original image files are unchanged. All portraits use lazy loading. Adjust `.portrait-*` rules in `styles.css` to change their framing.
+- Portraits are displayed in rounded frames with CSS positioning; original image files are unchanged. All portraits use lazy loading. Adjust `.portrait-*` rules in `styles.css` to change their framing.
 - Contact uses Zhong Chen's corresponding-author address from the proposal: `zhong.chen@cs.siu.edu`.
 - Update the website and the `.ics` file together if the submission deadline changes.
 
@@ -69,4 +74,16 @@ Only the website files are selected by the commands above. The original proposal
 - [Steve Jiang, UT Southwestern](https://profiles.utsouthwestern.edu/profile/150563/steve-jiang.html)
 - [GitHub Pages publishing source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-Original layout, illustration, and icon were created for this website. The eight portraits were supplied by the user. Institutional logos are not bundled.
+Styling was reimplemented to match the user-selected LLM4HR reference on November 11, 2026. The original illustration and icon were created for this website. The eight portraits were supplied by the user. Institutional logos are not bundled.
+
+Banner photograph: [Montreal Skyline](https://commons.wikimedia.org/wiki/File:Montreal_Skyline.jpg) by CanadianPhotographer, [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). The local file is the 1280-pixel Wikimedia thumbnail; the purple overlay and crop are applied in CSS.
+
+## Publish later changes
+
+After reviewing the local preview, run:
+
+```powershell
+git add index.html styles.css script.js assets README.md
+git commit -m "Match LLM4HR conference website style"
+git push
+```

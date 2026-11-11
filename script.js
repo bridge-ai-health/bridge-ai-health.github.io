@@ -4,7 +4,7 @@ document.documentElement.classList.add("js");
 
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#site-nav");
-const mobileLayout = window.matchMedia("(max-width: 720px)");
+const mobileLayout = window.matchMedia("(max-width: 991px)");
 
 function closeMenu(returnFocus = false) {
   menuButton.setAttribute("aria-expanded", "false");
